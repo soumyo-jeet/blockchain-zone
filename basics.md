@@ -35,3 +35,13 @@ A decentralized system where individual computers (nodes) connect and transact d
 A classic thought experiment in distributed computing about achieving consensus (agreement) among unreliable participants (generals/nodes) who might be traitors.
 It's proven that making true dicision becomes impossible when 1/3 of the genarals are traitors
 ---
+
+## ***Consensus Protocols***
+Mechanisms used in blockchain networks to achieve agreement among distributed nodes on the state of the ledger, ensuring data integrity and security without a central authority.
+- **Proof of Work (PoW)**: Miners solve complex mathematical puzzles to validate transactions and create new blocks, requiring significant computational power and energy.
+- **Proof of Stake (PoS)**: Validators are chosen to create new blocks based on the amount of cryptocurrency they hold and are willing to "stake" as collateral, reducing energy consumption compared to PoW.
+- **Delegated Proof of Stake (DPoS)**: Token holders vote for a small number of delegates who are responsible for validating transactions and creating new blocks, enhancing scalability and efficiency.
+- **Practical Byzantine Fault Tolerance (PBFT)**: A consensus algorithm designed to function efficiently in environments where nodes may act maliciously, ensuring agreement as long as less than one-third of the nodes are faulty.
+- **Competative chain acceptance**: The longest chain in the network is accepted as the valid one.
+
+After block mining (POW), the block is added to the chain of all the nodes in the network through some acceptance criteria, which prevents malicious attacks
