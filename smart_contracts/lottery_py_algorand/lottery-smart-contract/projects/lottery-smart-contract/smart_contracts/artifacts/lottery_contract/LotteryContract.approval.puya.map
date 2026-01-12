@@ -1,0 +1,1064 @@
+{
+  "version": 3,
+  "sources": [
+    "../../lottery_contract/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAIA;;;;;;AAAA;;;AAAA;;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;AAAA;;;AAAA;;;;;;AAAA;AAAA;;;;;;AAAA;;;AAAA;;;;AAAA;AAuCK;;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAjCA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAEG;AAAA;AAAA;AACA;AAAqB;AAArB;AACA;AAAe;;AAAf;AAJH;AAAA;AAMA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAGU;AAAA;;AAAwB;;AAAxB;AAAP;AAEO;;AAAsB;AAAA;AAAA;AAAA;AAAtB;AAAP;AAGA;AAAA;AAAA;AAAA;AAAqB;AAArB;AAAA;AAAA;AAAA;AARH;AAAA;AAaU;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAP;AACO;AAAA;AAAA;AAAA;AAAP;AAAA;AAEY;;AACD;AAAA;AAEF;;AAET;AAEY;;AAAA;;AAAA;AAA6C;;;;AAA7C;;;;;AAFZ;;;AAGQ;;;AAHR;AAXH;AAAA;AAoBU;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAA;;AAAA;AAAP;AAGA;;;;;;AAAA;;;AAGU;;;AAHV;AANH;AAAA",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 1 0 1000"
+    },
+    "7": {
+      "op": "bytecblock \"total_entries\" \"creator\" \"entry_fee\""
+    },
+    "41": {
+      "op": "pushbytes 0x9a7dcd60 // method \"del_contract()void\"",
+      "defined_out": [
+        "Method(del_contract()void)"
+      ],
+      "stack_out": [
+        "Method(del_contract()void)"
+      ]
+    },
+    "47": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(del_contract()void)",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "Method(del_contract()void)",
+        "tmp%0#1"
+      ]
+    },
+    "50": {
+      "op": "match main_del_contract_route@2",
+      "stack_out": []
+    },
+    "54": {
+      "block": "main_switch_case_next@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "56": {
+      "op": "!",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "57": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "58": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "60": {
+      "op": "bz main_create_NoOp@8",
+      "stack_out": []
+    },
+    "63": {
+      "op": "pushbytess 0x87ea49d7 0xbe0bdebf // method \"enter_lottery(pay)void\", method \"pick_winner()void\"",
+      "defined_out": [
+        "Method(enter_lottery(pay)void)",
+        "Method(pick_winner()void)"
+      ],
+      "stack_out": [
+        "Method(enter_lottery(pay)void)",
+        "Method(pick_winner()void)"
+      ]
+    },
+    "75": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(enter_lottery(pay)void)",
+        "Method(pick_winner()void)",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "Method(enter_lottery(pay)void)",
+        "Method(pick_winner()void)",
+        "tmp%10#0"
+      ]
+    },
+    "78": {
+      "op": "match enter_lottery pick_winner",
+      "stack_out": []
+    },
+    "84": {
+      "op": "err"
+    },
+    "85": {
+      "block": "main_create_NoOp@8",
+      "stack_in": [],
+      "op": "pushbytes 0xa03b81d2 // method \"create_application(uint64)void\"",
+      "defined_out": [
+        "Method(create_application(uint64)void)"
+      ],
+      "stack_out": [
+        "Method(create_application(uint64)void)"
+      ]
+    },
+    "91": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(create_application(uint64)void)",
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "Method(create_application(uint64)void)",
+        "tmp%11#0"
+      ]
+    },
+    "94": {
+      "op": "match create_application",
+      "stack_out": []
+    },
+    "98": {
+      "op": "err"
+    },
+    "99": {
+      "block": "main_del_contract_route@2",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "101": {
+      "op": "pushint 5 // DeleteApplication",
+      "defined_out": [
+        "DeleteApplication",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "DeleteApplication"
+      ]
+    },
+    "103": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "104": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%3#0"
+      ]
+    },
+    "106": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "107": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "108": {
+      "op": "b del_contract"
+    },
+    "111": {
+      "subroutine": "smart_contracts.lottery_contract.contract.LotteryContract.create_application[routing]",
+      "params": {},
+      "block": "create_application",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "114": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "115": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0"
+      ]
+    },
+    "116": {
+      "op": "pushint 8",
+      "defined_out": [
+        "8",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "118": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "119": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "120": {
+      "op": "btoi",
+      "defined_out": [
+        "entry_fee#0"
+      ],
+      "stack_out": [
+        "entry_fee#0"
+      ]
+    },
+    "121": {
+      "op": "bytec_2 // \"entry_fee\"",
+      "defined_out": [
+        "\"entry_fee\"",
+        "entry_fee#0"
+      ],
+      "stack_out": [
+        "entry_fee#0",
+        "\"entry_fee\""
+      ]
+    },
+    "122": {
+      "op": "swap",
+      "stack_out": [
+        "\"entry_fee\"",
+        "entry_fee#0"
+      ]
+    },
+    "123": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "124": {
+      "op": "bytec_0 // \"total_entries\"",
+      "defined_out": [
+        "\"total_entries\""
+      ],
+      "stack_out": [
+        "\"total_entries\""
+      ]
+    },
+    "125": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "\"total_entries\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"total_entries\"",
+        "0"
+      ]
+    },
+    "126": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "127": {
+      "op": "bytec_1 // \"creator\"",
+      "defined_out": [
+        "\"creator\""
+      ],
+      "stack_out": [
+        "\"creator\""
+      ]
+    },
+    "128": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "\"creator\"",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "\"creator\"",
+        "tmp%0#1"
+      ]
+    },
+    "130": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "131": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "132": {
+      "op": "return",
+      "stack_out": []
+    },
+    "133": {
+      "subroutine": "smart_contracts.lottery_contract.contract.LotteryContract.enter_lottery[routing]",
+      "params": {},
+      "block": "enter_lottery",
+      "stack_in": [],
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "135": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "1"
+      ]
+    },
+    "136": {
+      "op": "-",
+      "defined_out": [
+        "payment_txn#0"
+      ],
+      "stack_out": [
+        "payment_txn#0"
+      ]
+    },
+    "137": {
+      "op": "dup",
+      "defined_out": [
+        "payment_txn#0",
+        "payment_txn#0 (copy)"
+      ],
+      "stack_out": [
+        "payment_txn#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "138": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_type%0#0",
+        "payment_txn#0"
+      ],
+      "stack_out": [
+        "payment_txn#0",
+        "gtxn_type%0#0"
+      ]
+    },
+    "140": {
+      "op": "intc_0 // pay",
+      "defined_out": [
+        "gtxn_type%0#0",
+        "pay",
+        "payment_txn#0"
+      ],
+      "stack_out": [
+        "payment_txn#0",
+        "gtxn_type%0#0",
+        "pay"
+      ]
+    },
+    "141": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_type_matches%0#0",
+        "payment_txn#0"
+      ],
+      "stack_out": [
+        "payment_txn#0",
+        "gtxn_type_matches%0#0"
+      ]
+    },
+    "142": {
+      "error": "transaction type is pay",
+      "op": "assert // transaction type is pay",
+      "stack_out": [
+        "payment_txn#0"
+      ]
+    },
+    "143": {
+      "op": "dup",
+      "stack_out": [
+        "payment_txn#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "144": {
+      "op": "gtxns Receiver",
+      "defined_out": [
+        "payment_txn#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "payment_txn#0",
+        "tmp%0#1"
+      ]
+    },
+    "146": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "payment_txn#0",
+        "tmp%0#1",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "payment_txn#0",
+        "tmp%0#1",
+        "tmp%1#0"
+      ]
+    },
+    "148": {
+      "op": "==",
+      "defined_out": [
+        "payment_txn#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "payment_txn#0",
+        "tmp%2#0"
+      ]
+    },
+    "149": {
+      "op": "assert",
+      "stack_out": [
+        "payment_txn#0"
+      ]
+    },
+    "150": {
+      "op": "gtxns Amount",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "152": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "0"
+      ]
+    },
+    "153": {
+      "op": "bytec_2 // \"entry_fee\"",
+      "defined_out": [
+        "\"entry_fee\"",
+        "0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "0",
+        "\"entry_fee\""
+      ]
+    },
+    "154": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "155": {
+      "error": "check self.entry_fee exists",
+      "op": "assert // check self.entry_fee exists",
+      "stack_out": [
+        "tmp%3#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "156": {
+      "op": "==",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "157": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "158": {
+      "op": "intc_1 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "159": {
+      "op": "bytec_0 // \"total_entries\"",
+      "defined_out": [
+        "\"total_entries\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"total_entries\""
+      ]
+    },
+    "160": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "161": {
+      "error": "check self.total_entries exists",
+      "op": "assert // check self.total_entries exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "162": {
+      "op": "intc_0 // 1",
+      "stack_out": [
+        "maybe_value%1#0",
+        "1"
+      ]
+    },
+    "163": {
+      "op": "+",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "164": {
+      "op": "bytec_0 // \"total_entries\"",
+      "stack_out": [
+        "tmp%5#0",
+        "\"total_entries\""
+      ]
+    },
+    "165": {
+      "op": "swap",
+      "stack_out": [
+        "\"total_entries\"",
+        "tmp%5#0"
+      ]
+    },
+    "166": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "167": {
+      "op": "intc_0 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "168": {
+      "op": "return",
+      "stack_out": []
+    },
+    "169": {
+      "subroutine": "smart_contracts.lottery_contract.contract.LotteryContract.pick_winner[routing]",
+      "params": {},
+      "block": "pick_winner",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "171": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "172": {
+      "op": "bytec_1 // \"creator\"",
+      "defined_out": [
+        "\"creator\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"creator\""
+      ]
+    },
+    "173": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "174": {
+      "error": "check self.creator exists",
+      "op": "assert // check self.creator exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "175": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "176": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "177": {
+      "op": "intc_1 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "178": {
+      "op": "bytec_0 // \"total_entries\"",
+      "defined_out": [
+        "\"total_entries\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"total_entries\""
+      ]
+    },
+    "179": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "180": {
+      "error": "check self.total_entries exists",
+      "op": "assert // check self.total_entries exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "181": {
+      "op": "dup",
+      "defined_out": [
+        "maybe_value%1#0",
+        "maybe_value%1#0 (copy)"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_value%1#0 (copy)"
+      ]
+    },
+    "182": {
+      "op": "assert",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "183": {
+      "op": "global Round",
+      "defined_out": [
+        "maybe_value%1#0",
+        "round_num#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "round_num#0"
+      ]
+    },
+    "185": {
+      "op": "swap",
+      "stack_out": [
+        "round_num#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "186": {
+      "op": "%",
+      "defined_out": [
+        "rand_num#0"
+      ],
+      "stack_out": [
+        "rand_num#0"
+      ]
+    },
+    "187": {
+      "op": "gtxns Sender",
+      "defined_out": [
+        "winner#0"
+      ],
+      "stack_out": [
+        "winner#0"
+      ]
+    },
+    "189": {
+      "op": "itxn_begin"
+    },
+    "190": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%6#0",
+        "winner#0"
+      ],
+      "stack_out": [
+        "winner#0",
+        "tmp%6#0"
+      ]
+    },
+    "192": {
+      "op": "acct_params_get AcctBalance",
+      "defined_out": [
+        "check%0#0",
+        "value%0#0",
+        "winner#0"
+      ],
+      "stack_out": [
+        "winner#0",
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "194": {
+      "error": "account funded",
+      "op": "assert // account funded",
+      "stack_out": [
+        "winner#0",
+        "value%0#0"
+      ]
+    },
+    "195": {
+      "op": "pushint 1000000",
+      "defined_out": [
+        "1000000",
+        "value%0#0",
+        "winner#0"
+      ],
+      "stack_out": [
+        "winner#0",
+        "value%0#0",
+        "1000000"
+      ]
+    },
+    "199": {
+      "op": "-",
+      "defined_out": [
+        "inner_txn_params%0%%param_Amount_idx_0#0",
+        "winner#0"
+      ],
+      "stack_out": [
+        "winner#0",
+        "inner_txn_params%0%%param_Amount_idx_0#0"
+      ]
+    },
+    "200": {
+      "op": "itxn_field Amount",
+      "stack_out": [
+        "winner#0"
+      ]
+    },
+    "202": {
+      "op": "itxn_field Receiver",
+      "stack_out": []
+    },
+    "204": {
+      "op": "intc_0 // pay",
+      "defined_out": [
+        "pay"
+      ],
+      "stack_out": [
+        "pay"
+      ]
+    },
+    "205": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "207": {
+      "op": "intc_2 // 1000",
+      "defined_out": [
+        "1000"
+      ],
+      "stack_out": [
+        "1000"
+      ]
+    },
+    "208": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "210": {
+      "op": "itxn_submit"
+    },
+    "211": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "212": {
+      "op": "return",
+      "stack_out": []
+    },
+    "213": {
+      "subroutine": "smart_contracts.lottery_contract.contract.LotteryContract.del_contract[routing]",
+      "params": {},
+      "block": "del_contract",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "215": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "216": {
+      "op": "bytec_1 // \"creator\"",
+      "defined_out": [
+        "\"creator\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"creator\""
+      ]
+    },
+    "217": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "218": {
+      "error": "check self.creator exists",
+      "op": "assert // check self.creator exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "219": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ]
+    },
+    "220": {
+      "op": "dig 1",
+      "defined_out": [
+        "maybe_value%0#0",
+        "maybe_value%0#0 (copy)",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "tmp%0#0",
+        "maybe_value%0#0 (copy)"
+      ]
+    },
+    "222": {
+      "op": "==",
+      "defined_out": [
+        "maybe_value%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "223": {
+      "op": "assert",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "224": {
+      "op": "itxn_begin"
+    },
+    "225": {
+      "op": "dup",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%0#0 (copy)"
+      ]
+    },
+    "226": {
+      "op": "itxn_field CloseRemainderTo",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "228": {
+      "op": "itxn_field Receiver",
+      "stack_out": []
+    },
+    "230": {
+      "op": "intc_0 // pay",
+      "defined_out": [
+        "pay"
+      ],
+      "stack_out": [
+        "pay"
+      ]
+    },
+    "231": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "233": {
+      "op": "intc_2 // 1000",
+      "defined_out": [
+        "1000"
+      ],
+      "stack_out": [
+        "1000"
+      ]
+    },
+    "234": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "236": {
+      "op": "itxn_submit"
+    },
+    "237": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "238": {
+      "op": "return",
+      "stack_out": []
+    }
+  }
+}
